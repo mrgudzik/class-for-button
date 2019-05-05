@@ -21,7 +21,7 @@ class Button {
     accent = false,
     raised = false,
     compact = false,
-    danse = false,
+    dense = false,
     disabled = false
   }) {
     this._element = null;
@@ -30,7 +30,7 @@ class Button {
     this._accent = accent;
     this._raised = raised;
     this._compact = compact;
-    this._danse = danse;
+    this._dense = dense;
     this._disabled = disabled;
 
     this.init();
@@ -88,11 +88,11 @@ class Button {
     this.toggle('compact', value)
   }
 
-  get danse() {
+  get dense() {
     return this._primary;
   }
-  set danse(value) {
-    this.toggle('danse', value)
+  set dense(value) {
+    this.toggle('dense', value)
   }
 
   toggle(prop, value) {
